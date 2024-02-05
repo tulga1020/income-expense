@@ -19,7 +19,7 @@ export const createUsers = async (req, res) => {
       await fs.writeFileSync(userDb, JSON.stringify(alluser));
       return "Хэрэглэгч амжилттай үүсгэлээ";
     } else {
-      return "Бүртгэлтэй хэрэглэгч bna ";
+      throw new Error("Бүртгэлтэй хэрэглэгч bna");
     }
   } catch (error) {
     throw new Error(error.message);

@@ -11,9 +11,10 @@ export const loginController = async (req, res) => {
 export const createUsersController = async (req, res) => {
   try {
     const newuser = await createUsers(req);
-    res.send(newuser);
+    res.status(200).send(newuser);
   } catch (error) {
-    res.status(500).send(error.message);
+    console.log(error.message);
+    res.status(400).send(error.message);
   }
 };
 
