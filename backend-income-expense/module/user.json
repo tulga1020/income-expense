@@ -1,1 +1,37 @@
-[{},{"email":"battulga@rocketbytek.com","password":"$2b$04$EH3G2p.IZw.dbwY4hqIQBeGwUAq/Bd8clCOv0vzwlO/JZ/MUy.jQW","username":"tulga"},{"email":"","password":"$2b$04$kEfgIewf6Hfnvc4JWJwJx.PL8Aqimdcmfwqk2TPUheznry24/fX7W","username":""},{"email":"tukg","password":"$2b$04$n.rTeZpK/c91dRlsoKRQQe64LrtFBtxJcVyTK85vX6K5X2clx8yBq","username":"tuk"},{"email":"tukgss","password":"$2b$04$o5Y2enegH/OAOOQtP8POWeaexithpPx/dmod82elCOLTdy/mVcbHi","username":"tuka"},{"email":"aaaa","password":"$2b$04$sFEtSVfcxbxDJmRVs4pCAOXDrGZJvUzKMnHh8vb9vLsnImHn530/S","username":"aaaa"},{"email":"bbbb","password":"$2b$04$dj69vXNqKxxyVORtoltecuzMAdKqG2IcT6kBmP8Ys6/RXA7pazpgm","username":"bbbb"}]
+[
+  {
+    "email": "battulga@rocketbytek.com",
+    "password": "$2b$04$EH3G2p.IZw.dbwY4hqIQBeGwUAq/Bd8clCOv0vzwlO/JZ/MUy.jQW",
+    "username": "tulga"
+  },
+  {
+    "email": "",
+    "password": "$2b$04$kEfgIewf6Hfnvc4JWJwJx.PL8Aqimdcmfwqk2TPUheznry24/fX7W",
+    "username": ""
+  },
+  {
+    "email": "tukg",
+    "password": "$2b$04$n.rTeZpK/c91dRlsoKRQQe64LrtFBtxJcVyTK85vX6K5X2clx8yBq",
+    "username": "tuk"
+  },
+  {
+    "email": "tukgss",
+    "password": "$2b$04$o5Y2enegH/OAOOQtP8POWeaexithpPx/dmod82elCOLTdy/mVcbHi",
+    "username": "tuka"
+  },
+  {
+    "email": "aaaa",
+    "password": "$2b$04$sFEtSVfcxbxDJmRVs4pCAOXDrGZJvUzKMnHh8vb9vLsnImHn530/S",
+    "username": "aaaa"
+  },
+  {
+    "email": "bbbb",
+    "password": "$2b$04$dj69vXNqKxxyVORtoltecuzMAdKqG2IcT6kBmP8Ys6/RXA7pazpgm",
+    "username": "bbbb"
+  },
+  {
+    "email": "ffff",
+    "password": "$2b$04$Cp1q0yKpRnkol9hPbRYD4eut1aYMeN7DsklFk/1nlk4vo9cXl2l/y",
+    "username": "ffff"
+  }
+]
