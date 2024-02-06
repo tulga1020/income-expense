@@ -24,10 +24,9 @@ export const SignUp = () => {
   const createUser = async () => {
     try {
       checkPass();
-
       const result = await axios.post("http://localhost:7000/createUsers", {
         username,
-        password: password,
+        password,
         email,
       });
 
@@ -92,7 +91,7 @@ export const SignUp = () => {
       </div>
       <div className="flex">
         <p>Already have account</p>
-        <Link href="./toLogin">
+        <Link href="./">
           <Buttons
             bClass="bg-white w-fit text-[#0166FF] px-3"
             bText="Sign in"
