@@ -23,10 +23,11 @@ export const SignIn = () => {
         email: useremail,
         password: userpassword,
       });
-      const setItem = () => {
-        localStorage.setItem("loginToken", result.data.accessToken);
-      };
-      setItem();
+
+      console.log(result.data.accesstoken);
+
+      localStorage.setItem("loginToken", result.data.accesstoken);
+
       if (result.data != "email or password buruu baina") {
         router.push("/toLogin");
       } else {

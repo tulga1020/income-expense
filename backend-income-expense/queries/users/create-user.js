@@ -1,6 +1,6 @@
 import fs from "fs";
 import { makeHash } from "../../utils/password-hash.js";
-import { Jwt } from "jsonwebtoken";
+
 const userDb =
   "/Users/23LP2259/OneDrive - Nestcore LLC/income-expense/backend-income-expense/module/user.json";
 export const createUsers = async (req, res) => {

@@ -1,15 +1,15 @@
 import { login } from "../queries/users/login-user.js";
 import { createUsers } from "../queries/users/create-user.js";
-import { jwt } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 export const loginController = async (req, res) => {
   try {
     const user = await login(req);
     const accesstoken = jwt.sign(
-      { email: req.email },
+      { email: req.body.email },
       process.env.JWT_SECRET || "defaultSecret",
       { expiresIn: "1d" }
     );
-    res.send(user);
+    res.send({ user, accesstoken });
   } catch (error) {
     res.status(500).send(error.message);
   }
