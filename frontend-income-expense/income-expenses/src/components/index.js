@@ -10,3 +10,4 @@ export * from "@/components/CashBalance";
 export * from "@/components/CurrencySelect";
 export * from "@/components/FinishSignup";
 export * from "@/components/Step";
+export * from "@/components/Loading";

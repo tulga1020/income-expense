@@ -4,7 +4,6 @@ import { Buttons } from "./Buttons";
 import { useState } from "react";
 import axios from "axios";
 import Link from "next/link";
-import { Loading } from "./Loading";
 import { useRouter } from "next/navigation";
 
 export const SignUp = () => {

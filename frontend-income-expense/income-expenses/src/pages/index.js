@@ -1,7 +1,5 @@
 import { RightBlueWall, SignIn, SignUp } from "@/components/";
-import Image from "next/image";
 import { useState } from "react";
-import { One } from "@/contextcomponent/One";
 const Stepper = [RightBlueWall, SignIn, SignUp];
 export default function Home() {
   const [step, setStep] = useState(3);

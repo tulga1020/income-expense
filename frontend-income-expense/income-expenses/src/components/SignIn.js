@@ -78,7 +78,7 @@ export const SignIn = () => {
       </div>
       <div className="flex">
         <p>Don’t have account? </p>
-        <Link href="/createUser">
+        <Link href="/signUp">
           <Buttons
             bClass="bg-white w-fit text-[#0166FF] px-3"
             bText="Sign up"
