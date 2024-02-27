@@ -12,7 +12,7 @@ const userRouter = express.Router();
 // create user
 // userRouter.post("/createUsers", createUsersController);
 //login user
-// userRouter.post("/login", authorization, loginController);
+userRouter.post("/login", authorization, loginController);
 
 userRouter.post("/signup", createUsers);
 

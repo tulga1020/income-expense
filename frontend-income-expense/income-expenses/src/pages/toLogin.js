@@ -4,7 +4,7 @@ import { LeftWhiteWall } from "@/components/LeftWhiteWall";
 const loggedin = () => {
   return (
     <div className="w-screen h-screen flex">
-      <LeftWhiteWall />
+      <SignIn />
       <RightBlueWall />
     </div>
   );

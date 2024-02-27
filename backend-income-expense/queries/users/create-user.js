@@ -1,5 +1,5 @@
 // import fs from "fs";
-// import { makeHash } from "../../utils/password-hash.js";
+import { makeHash } from "../../utils/password-hash.js";
 
 // const userDb =
 //   "/Users/23LP2259/OneDrive - Nestcore LLC/income-expense/backend-income-expense/module/user.json";
@@ -9,13 +9,13 @@
 const createUserQuery = async (email, password, username, age) => {
   //shine hereglegch uusgeh function
   const userCreateQuery = `
-    INSERT INTO users(email, password, username, age) VALUES ($1, $2, $3, $4) RETURNING id 
+    INSERT INTO users(username, email, password,  age) VALUES ($1, $2, $3, $4) RETURNING id 
     `; // User
 
   const userId = await client.query(userCreateQuery, [
+    username,
     email,
     password,
-    username,
     age,
   ]);
   return userId;
@@ -23,7 +23,7 @@ const createUserQuery = async (email, password, username, age) => {
 export const createUsers = async (req, res) => {
   const { email, password, username, age } = req.body;
   // try {
-  //   const secretPassword = makeHash(password);
+  const secretPassword = makeHash(password);
   result = createUserQuery();
   console.log(result);
   res.send(result);

@@ -15,10 +15,10 @@ const signUp = () => {
   if (step < Stepper.length) return <Step />;
   return (
     <div className="w-screen h-screen flex justify-center items-center">
-      <Link href="/dashboard">
+      {/* <Link href="/dashboard">
         {" "}
         <span> Dashboard ruu orno uu</span>
-      </Link>
+      </Link> */}
 
       {/* <Loading /> */}
       {/* <CurrencySelect />

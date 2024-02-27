@@ -1,7 +1,7 @@
 import userRouter from "./routes/userRouter.js";
 import express from "express";
 import dotenv from "dotenv";
-// import cors from "cors";
+import cors from "cors";
 // const pg = require("pg");
 import pg from "pg";
 const CONNECTION_STRING =
@@ -22,7 +22,7 @@ const dbInit = async () => {
 dbInit();
 
 const createUserTable = async () => {
-  const userTableCreateQuery = `CREATE TABLE IF NOT EXIST users(
+  const userTableCreateQuery = `CREATE TABLE IF NOT EXISTS users(
     id SERIAL PRIMARY KEY, username TEXT NOT NULL, email TEXT NOT NULL, password TEXT NOT NULL, age SMALLINT
   )`;
   const result = await client.query(userTableCreateQuery);
@@ -30,7 +30,7 @@ const createUserTable = async () => {
   client.end();
 };
 
-// app.use(cors());
+app.use(cors());
 app.get("", async (req, res) => {
   res.send("working");
 });

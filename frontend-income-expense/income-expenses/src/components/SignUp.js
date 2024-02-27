@@ -30,14 +30,11 @@ export const SignUp = () => {
     try {
       if (!checkPass()) return setError("password buruu baina");
       const userData = {
+        username,
         email,
         password,
-        username,
       };
-      const result = await axios.post(
-        "http://localhost:7000/createUsers",
-        userData
-      );
+      const result = await axios.post("http://localhost:8000/signup", userData);
       setSignup(result.data);
       router.push("/signUp");
       return;

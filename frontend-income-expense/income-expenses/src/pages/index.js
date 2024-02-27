@@ -1,5 +1,6 @@
 import { RightBlueWall, SignIn, SignUp } from "@/components/";
 import { useState } from "react";
+import Link from "next/link";
 const Stepper = [RightBlueWall, SignIn, SignUp];
 export default function Home() {
   const [step, setStep] = useState(3);
@@ -11,7 +12,9 @@ export default function Home() {
     <div>
       {/* <One ssname={ssname} /> */}
       <div className="w-screen h-screen flex">
-        <SignIn />
+        <div className="w-[50%] flex justify-center items-center">
+          <Link href="/dashboard"> Go to Dashboard </Link>
+        </div>{" "}
         <RightBlueWall />
       </div>
     </div>

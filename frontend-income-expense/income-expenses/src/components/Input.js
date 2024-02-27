@@ -1,6 +1,11 @@
 export const Input = (props) => {
-  const { inputClass, inputType, inputPlaceholder, inputValue, inputChange } =
-    props;
+  const {
+    inputClass,
+    inputType,
+    inputPlaceholder,
+    inputValue = "",
+    inputChange = "",
+  } = props;
   return (
     <input
       className={inputClass}
