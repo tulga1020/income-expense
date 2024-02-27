@@ -7,6 +7,6 @@
     @apply w-4/12 h-56 rounded-2xl bg-white;
   }
   .chartCard {
-    @apply w-6/12 h-56 rounded-2xl bg-white;
+    @apply w-6/12 h-72 rounded-2xl bg-white;
   }
 }
