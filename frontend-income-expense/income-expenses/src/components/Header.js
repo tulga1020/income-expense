@@ -2,7 +2,7 @@ import { Svg } from "./Svg";
 import { Buttons } from "./Buttons";
 import Image from "next/image";
 import Link from "next/link";
-export const Header = ({ children }) => {
+export const Header = () => {
   return (
     <header className="mx-auto gap-4 z-10 bg-gray-200">
       <div className="w-screen bg-white">
@@ -27,7 +27,6 @@ export const Header = ({ children }) => {
           </div>
         </div>
       </div>
-      {children}
     </header>
   );
 };

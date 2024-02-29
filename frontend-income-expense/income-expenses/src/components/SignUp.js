@@ -36,7 +36,7 @@ export const SignUp = () => {
       };
       const result = await axios.post("http://localhost:8000/signup", userData);
       setSignup(result.data);
-      router.push("/signUp");
+      router.push("/signup/signUp");
       return;
     } catch (error) {
       setError(error.message);

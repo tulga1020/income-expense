@@ -3,7 +3,7 @@ import { PieCard } from "./PieCard";
 
 export const ChartCard = () => {
   return (
-    <div className="flex gap-2 ">
+    <div className="flex gap-4 ">
       <div className="chartCard ">
         <div className="flex flex-col gap-2 items-center p-2 w-full h-fit ">
           <BarCard title="Income Expense" />

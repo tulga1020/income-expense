@@ -29,7 +29,7 @@ export const SignIn = () => {
       localStorage.setItem("loginToken", result.data.accesstoken);
 
       if (result.data != "email or password buruu baina") {
-        router.push("/toLogin");
+        router.push("src/login/index.js");
       } else {
         setError("email or password buruu baina");
       }
@@ -78,7 +78,7 @@ export const SignIn = () => {
       </div>
       <div className="flex">
         <p>Don’t have account? </p>
-        <Link href="/createUser">
+        <Link href="/signup/index.js">
           <Buttons
             bClass="bg-white w-fit text-[#0166FF] px-3"
             bText="Sign up"

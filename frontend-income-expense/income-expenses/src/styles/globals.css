@@ -4,9 +4,15 @@
 
 @layer components {
   .totalCard {
-    @apply w-4/12 h-56 rounded-2xl bg-white;
+    @apply text-2xl bg-white rounded-2xl w-4/12 gap-4;
   }
   .chartCard {
-    @apply w-6/12 h-72 rounded-2xl bg-white;
+    @apply w-6/12 bg-white rounded-2xl;
+  }
+  .categoryText {
+    @apply w-10/12 text-left items-center font-normal;
+  }
+  .categoryDiv {
+    @apply flex justify-between items-center;
   }
 }
